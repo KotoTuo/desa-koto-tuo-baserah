@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://KotoTuo.github.io/website-desa-koto-tuo/sitemap.xml
