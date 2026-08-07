@@ -658,17 +658,18 @@ nav a{
     padding:60px 40px;
 }
 .footer-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:40px;
-    margin-left:0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+    align-items:start;
+    margin-left: 0%;
 }
 .logo-contact{
     gap:25px;
 }
 .footer-item{
     flex:1 1 280px;
+    min-width: 0;
 }
 .footer-item h3{
     font-size:20px;
@@ -678,7 +679,7 @@ nav a{
     line-height:1.8;
 }
 .credit{
-    width:100%;
+    width:60%;
     margin-top:30px;
     text-align:center;
 }
@@ -907,14 +908,14 @@ nav a{
 .footer-container{
     display:flex;
     flex-direction:column;
-    gap:35px;
-    align-items:flex-start;
+    gap:25px;
+    margin-left: 0%;
 }
 .logo-contact{
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items:flex-start;
-    gap:20px;
+    gap:30px;
     width:100%;
 }
 .logo-contact img{
@@ -922,6 +923,7 @@ nav a{
 }
 .footer-item{
     width:100%;
+    min-width: 0;
 }
 .footer-item h3{
     font-size:20px;
@@ -932,7 +934,7 @@ nav a{
     line-height:1.8;
 }
 .credit{
-    width:100%;
+    width:60%;
     text-align:center;
     margin-top:20px;
     padding-top:20px;
