@@ -80,7 +80,7 @@ header.scrolled nav a{
     color:#000000;
 }
 nav a:hover{
-    color:#2A7B46;
+    color:#158b49;
 }
 /*COVER*/
 .cover{
@@ -312,9 +312,10 @@ iframe{
 }
 /*BERITA*/
 .berita{
-    padding:100px 0;
+    padding:50px 0px;
     background:#ffffff;
     text-align:center;
+
 }
 .berita h2{
     font-size:40px;
@@ -360,7 +361,6 @@ iframe{
     transition:.3s;
     font-size: 12px;
     font-weight:500;
-    margin-bottom: 60px;
 }
 .berita .tombol:hover{
     background:#158b49;
@@ -422,154 +422,655 @@ iframe{
     transform:translateY(-3px);
 }
 /*FOOTER*/
+/* ================= FOOTER ================= */
 .footer{
-    padding:0px 0;
-    background-color: #0E5E30;
-}
-.footer .container{
-    display:grid;
-    grid-template-columns:320px 1fr;
-    gap:700px;
-    align-items: center;
-}
-.footer-img{
-    text-align:center;
-}
-.footer-img img{
-    width:1000px;
-    margin-left: -100px;
-}
-.footer-menu{
-    width:250px;
-}
-.footer-menu h2{
+    background:#0E5E30;
     color:#ffffff;
+    padding:35px 90px;
+}
+.footer-container{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:160px;
+    flex-wrap:wrap;
+    margin-left: 6%;
+}
+/* ===== Kolom kiri ===== */
+.footer-left{
+    display:flex;
+    flex-direction:column;
+}
+.logo-contact{
+    display:flex;
+    align-items:flex-start;
+    gap:35px;
+    margin-bottom:25px;
+}
+.logo-contact img{
+    width:75px;
+    height:auto;
+}
+/* ===== Credit ===== */
+.credit{
+    background: #157e43;
+    backdrop-filter:blur(5px);
+    border-radius:15px;
+    padding:15px 20px;
+    width:270px;
+}
+.credit p{
+    font-size:14px;
+    margin-bottom:8px;
+}
+.credit h4{
+    font-size:14px;
+    font-weight:400;
+    line-height:1.5;
+}
+/* ===== Semua Kolom ===== */
+.footer-item{
+    display:flex;
+    flex-direction:column;
+}
+.footer-item h3{
     font-size:16px;
-    font-weight:550;
-    margin-bottom:16px;
+    font-weight:600;
+    margin-bottom:28px;
 }
-.footer-menu ul{
-    list-style:none;
+.footer-item p{
+    font-size:16px;
+    line-height:1.8;
+    color:#ffffff;
+    max-width:420px;
 }
-.footer-menu ul li{
-    margin-bottom:10px;
-}
-.footer-menu ul li a{
+.footer-item a{
     color:#ffffff;
     text-decoration:underline;
-    font-size:14px;
+    font-size:16px;
+    margin-bottom:16px;
     transition:.3s;
 }
-.footer-menu ul li a:hover{
+.footer-item a1{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:16px;
+    margin-bottom:16px;
+    transition:.3s;
+}
+.footer-item a:hover{
+    color:#158b49;
+}
+/* =========================
+      HAMBURGER MENU
+========================= */
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#ffffff;
+    cursor:pointer;
+    z-index:1001;
+}
+header.scrolled .menu-toggle{
     color:#000000;
 }
-/* Responsive */
-
-@media(max-width:1100px){
-
-.footer-container{
-
-grid-template-columns:1fr;
-
-row-gap:45px;
-
+/* ===========================
+   RESPONSIVE LAPTOP & TABLET
+=========================== */
+@media (max-width:992px){
+header{
+    padding:12px 30px;
 }
-
-.copyright{
-
-width:100%;
-
-max-width:300px;
-
+.logo img{
+    width:55px;
 }
-
+.logo h3{
+    font-size:15px;
 }
-
-@media(max-width:768px){
-
+.logo p{
+    font-size:12px;
+}
+nav{
+    gap:22px;
+}
+nav a{
+    font-size:15px;
+}
+.cover{
+    height:80vh;
+}
+.cover-content{
+    left:60px;
+    bottom:70px;
+    max-width:650px;
+}
+.cover-content h1{
+    font-size:48px;
+    line-height:1.2;
+}
+.cover-content p{
+    font-size:18px;
+    margin-top:15px;
+}
+.sejarah{
+    padding:80px 40px;
+}
+.sejarah .container{
+    width:100%;
+}
+.sejarah h2{
+    font-size:38px;
+    margin-bottom:25px;
+}
+.sejarah p{
+    font-size:17px;
+    line-height:1.9;
+    text-align:justify;
+}
+.statistik{
+    padding:80px 40px;
+}
+.statistik h2{
+    font-size:38px;
+}
+.cards{
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+.card{
+    padding:35px 25px;
+}
+.card h1{
+    font-size:60px;
+}
+.card h3{
+    font-size:18px;
+}
+.struktur{
+    padding:80px 40px;
+}
+.struktur h2{
+    font-size:38px;
+}
+.struktur img{
+    width:100%;
+    max-width:850px;
+    display:block;
+    margin:auto;
+}
+.lokasi{
+    padding:80px 40px;
+}
+.lokasi h2{
+    font-size:38px;
+}
+.lokasi-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+}
+.map iframe{
+    width:100%;
+    height:420px;
+}
+.info-lokasi{
+    width:100%;
+}
+.berita{
+    padding:80px 40px;
+}
+.berita h2{
+    font-size:38px;
+}
+.berita .cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+.berita .card{
+    width:100%;
+}
+.berita .card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+.galeri{
+    padding:80px 40px;
+}
+.galeri h2{
+    font-size:38px;
+}
+.gambar{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+.gambar img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:10px;
+}
 .footer{
-
-padding:50px 30px;
-
+    padding:60px 40px;
 }
-.footer h2{
-font-size:22px;
+.footer-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:40px;
+    margin-left:0;
 }
-.footer p{
-font-size:16px;
+.logo-contact{
+    gap:25px;
 }
-.footer-logo img{
-width:80px;
+.footer-item{
+    flex:1 1 280px;
+}
+.footer-item h3{
+    font-size:20px;
+}
+.footer-item p{
+    font-size:15px;
+    line-height:1.8;
+}
+.credit{
+    width:100%;
+    margin-top:30px;
+    text-align:center;
 }
 }
 /* ===========================
-RESPONSIVE
+   RESPONSIVE HP & TABLET PORTRAIT
 =========================== */
-@media(max-width:991px){
-.cover-content h1{
-font-size:42px;
+@media (max-width:768px){
+header{
+    padding:12px 20px;
 }
-.sambutan .container,
-.lokasi-grid,
-.cards,
-.berita .cards,
-.gambar,
-.footer-grid{
-grid-template-columns:1fr;
+/* tombol hamburger */
+.menu-toggle{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    cursor:pointer;
+    z-index:1001;
 }
+/* menu */
 nav{
-display:none;
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:220px;
+    height:100vh;
+    background:#106B33;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    gap:30px;
+    transition:.35s;
+    box-shadow:-8px 0 25px rgba(0,0,0,.25);
 }
-.jami{
-height:350px;
+nav.active{
+    right:0;
 }
-.rayo{
-height:420px;
+nav a{
+    color:white;
+    font-size:18px;
+    margin-right: 25%;
 }
-.onom h2{
-font-size:36px;
+.cover{
+    height:70vh;
 }
+.cover::before{
+    background:rgba(0,0,0,.45);
 }
-@media(max-width:600px){
 .cover-content{
-bottom:80px;
-left:30px;
-right:30px;
+    left:25px;
+    right:25px;
+    bottom:55px;
+    max-width:100%;
 }
 .cover-content h1{
-font-size:32px;
+    font-size:34px;
+    line-height:1.25;
 }
 .cover-content p{
-font-size:16px;
+    font-size:16px;
+    margin-top:15px;
+    line-height:1.6;
 }
-.isi h2,
-.sejarah h2,
-.lokasi h2,
-.statistik h2,
-.struktur h2,
-.berita h2,
-.galeri h2{
-font-size:28px;
+.cover-content a{
+    margin-top:25px;
+    padding:12px 26px;
+    font-size:15px;
+}
+.sambutan{
+    padding:60px 20px;
+}
+.sambutan .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+.kepala img{
+    width:220px;
+    max-width:100%;
+}
+.isi{
+    width:100%;
+}
+.isi h2{
+    font-size:30px;
+    text-align:center;
+    margin-bottom:18px;
+}
+.isi p{
+    font-size:15px;
+    line-height:1.8;
+    text-align:justify;
+}
+.sejarah{
+    padding:60px 20px;
+}
+.sejarah h2{
+    font-size:30px;
+    text-align:center;
+    margin-bottom:20px;
+}
+.sejarah p{
+    font-size:15px;
+    line-height:1.9;
+    text-align:justify;
+    margin-bottom:18px;
+}
+.statistik{
+    padding:60px 20px;
+}
+.statistik h2{
+    font-size:30px;
+    text-align:center;
+}
+.cards{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+.card{
+    padding:30px 20px;
 }
 .card h1{
-font-size:38px;
+    font-size:52px;
 }
-.onom-content h2{
-font-size:30px;
+.card h3{
+    font-size:18px;
 }
-.galeri img{
-height:200px;
+.card p{
+    font-size:15px;
 }
-header{
-padding:15px 20px;
+.struktur{
+    padding:60px 20px;
 }
-.logo img{
-width:45px;
+.struktur h2{
+    font-size:30px;
+    text-align:center;
 }
-.logo h3{
-font-size:16px;
+.struktur img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
 }
-.logo p{
-font-size:12px;
+.lokasi{
+    padding:60px 20px;
 }
+.lokasi h2{
+    font-size:30px;
+    text-align:center;
+}
+.lokasi-grid{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+.map iframe{
+    width:100%;
+    height:300px;
+    border-radius:10px;
+}
+.info-lokasi{
+    width:100%;
+}
+.info-lokasi h3{
+    font-size:22px;
+}
+.info-lokasi p{
+    font-size:15px;
+    line-height:1.8;
+}
+.info-lokasi a{
+    width:100%;
+    text-align:center;
+    padding:12px;
+}
+.berita{
+    padding:60px 20px;
+}
+.berita h2{
+    font-size:30px;
+    text-align:center;
+}
+.berita .cards{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+.berita .card{
+    width:100%;
+}
+.berita .card img{
+    height:220px;
+    object-fit:cover;
+}
+.berita .card h3{
+    font-size:20px;
+}
+.berita .card p{
+    font-size:15px;
+    line-height:1.7;
+}
+.berita .card a{
+    display:inline-block;
+    margin-top:15px;
+}
+.galeri{
+    padding:60px 20px;
+}
+.galeri h2{
+    font-size:30px;
+    text-align:center;
+}
+.gambar{
+    grid-template-columns:1fr;
+    gap:18px;
+}
+.gambar img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+.footer{
+    padding:50px 20px;
+}
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    align-items:flex-start;
+}
+.logo-contact{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    width:100%;
+}
+.logo-contact img{
+    width:70px;
+}
+.footer-item{
+    width:100%;
+}
+.footer-item h3{
+    font-size:20px;
+    text-align:left;
+}
+.footer-item p{
+    font-size:15px;
+    line-height:1.8;
+}
+.credit{
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+}
+/* ===========================
+   RESPONSIVE HP KECIL
+=========================== */
+@media (max-width:480px){
+.cover{
+    height:65vh;
+}
+.cover-content{
+    left:20px;
+    right:20px;
+    bottom:40px;
+}
+.cover-content h1{
+    font-size:28px;
+}
+.cover-content p{
+    font-size:14px;
+}
+.cover-content a{
+    width:fit-content;
+    padding:11px 22px;
+}
+.kepala img{
+    width:180px;
+}
+.isi h2{
+    font-size:26px;
+}
+.isi p{
+    font-size:14px;
+}
+.sejarah h2{
+    font-size:26px;
+}
+.sejarah p{
+    font-size:14px;
+}
+.statistik{
+    padding:50px 15px;
+}
+.statistik h2{
+    font-size:26px;
+}
+.card{
+    padding:25px 18px;
+}
+.card h1{
+    font-size:42px;
+}
+.card h3{
+    font-size:16px;
+}
+.card p{
+    font-size:14px;
+}
+.struktur{
+    padding:50px 15px;
+}
+.struktur h2{
+    font-size:26px;
+}
+.lokasi{
+    padding:50px 15px;
+}
+.lokasi h2{
+    font-size:26px;
+}
+.map iframe{
+    height:240px;
+}
+.info-lokasi h3{
+    font-size:20px;
+}
+.info-lokasi p{
+    font-size:14px;
+}
+.berita{
+    padding:50px 15px;
+}
+.berita h2{
+    font-size:26px;
+}
+.berita .card img{
+    height:190px;
+}
+.berita .card h3{
+    font-size:18px;
+}
+.berita .card p{
+    font-size:14px;
+}
+.galeri{
+    padding:50px 15px;
+}
+.galeri h2{
+    font-size:26px;
+}
+.gambar{
+    gap:15px;
+}
+.gambar img{
+    height:190px;
+}
+.footer{
+    padding:40px 15px;
+}
+.logo-contact img{
+    width:60px;
+}
+.footer-item h3{
+    font-size:18px;
+}
+.footer-item p{
+    font-size:14px;
+}
+.credit{
+    font-size:13px;
+}
+}
+
+
+.menu-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:998;
+}
+.menu-overlay.active{
+    opacity:1;
+    visibility:visible;
 }

@@ -27,12 +27,15 @@
                 <p>Kecamatan Kuantan Hilir</p>
             </div>
         </div>
-        <nav>
+        <nav id="nav-menu">
             <a href="index.html">Beranda</a>
             <a href="peta.html">Peta Desa</a>
             <a href="berita.html">Berita</a>
             <a href="galeri.html">Galeri</a>
         </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
     <!--COVER-->
     <section class="cover">
@@ -74,19 +77,45 @@
         <p1>Nantikan berita lainnya...</p1>
     </section>
     <!--FOOTER-->
-    <section class="footer">
-        <div class="container">
-            <div class="footer-img">
-                <img src="images/footer.png">
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="logo-contact">
+                <img src="images/logo.png" alt="Logo Desa">
+                <div class="footer-item">
+                    <h3>Hubungi Kami</h3>
+                    <a1 href="mailto:kototuo20192024@gmail.com">
+                        kototuo20192024@gmail.com
+                    </a1>
+                    <a1 href="https://wa.me/6282287370561">
+                        +62 822-8737-0561
+                    </a1>
+                </div>
             </div>
-            <div class="footer-menu">
-            <h2>Jelajahi</h2>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="peta.html">Peta</a></li>
-                <li><a href="berita.html">Berita</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-            </ul>
+            <div class="credit">
+                <p>Desain oleh</p>
+                <h4>KUKERTA UNRI BERDAMPAK 2026</h4>
             </div>
         </div>
-    </section>
+        <div class="footer-item">
+            <h3>Alamat Kantor Desa</h3>
+            <p>
+                JL. Jendral Sudirman No. 38,
+                Koto Tuo, Kecamatan Kuantan Hilir,
+                Kabupaten Kuantan Singingi,
+                Riau 29561
+            </p>
+        </div>
+        <div class="footer-item">
+            <h3>Jelajahi</h3>
+            <a href="index.html">Beranda</a>
+            <a href="peta.html">Peta</a>
+            <a href="berita.html">Berita</a>
+            <a href="galeri.html">Galeri</a>
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+    <div class="menu-overlay"></div>
+</body>
+</html>
