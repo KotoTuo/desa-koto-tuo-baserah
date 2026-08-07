@@ -440,6 +440,7 @@ iframe{
 .footer-left{
     display:flex;
     flex-direction:column;
+    margin-bottom: -20%;
 }
 .logo-contact{
     display:flex;
@@ -472,6 +473,7 @@ iframe{
 .footer-item{
     display:flex;
     flex-direction:column;
+    margin-bottom: -20%;
 }
 .footer-item h3{
     font-size:16px;
@@ -911,7 +913,7 @@ nav a{
 .logo-contact{
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start;
     gap:20px;
     width:100%;
 }
